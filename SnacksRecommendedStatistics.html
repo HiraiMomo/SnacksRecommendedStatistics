@@ -1,0 +1,945 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+</head>
+<body>
+    <table id="Table" style="display: none">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>推薦一</td>
+                <td>推薦二</td>
+                <td>推薦三</td>
+                <td>推薦四</td>
+                <td>推薦五</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="Once">a195536</td>
+                <td class="First">鳳梨酥</td>
+                <td class="Secord">浪味仙</td>
+                <td class="Thrid">可樂果</td>
+                <td class="Forth">麻花捲</td>
+                <td class="Fiveth">蝦味先</td>
+            </tr>
+            <tr>
+                <td class="Once">a84666520</td>
+                <td class="First">維力炸醬麵</td>
+                <td class="First">新貴派</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">AileeSu</td>
+                <td class="First">沙其瑪</td>
+                <td class="First">可樂果</td>
+                <td class="First">巧克球QQ</td>
+                <td class="First">方塊酥</td>
+                <td class="First">鳳梨酥</td>
+            </tr>
+            <tr>
+                <td class="Once">apiou38</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">寶咖咖</td>
+                <td class="First">蛋捲</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">arx3721</td>
+                <td class="First">台南小煎餅</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">抹茶kitkat</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">beejoe</td>
+                <td class="First">可樂果</td>
+                <td class="First">新貴派</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">貢糖</td>
+                <td class="First">牛舌餅</td>
+            </tr>
+            <tr>
+                <td class="Once">biaschae</td>
+                <td class="First">77乳加</td>
+                <td class="First">張君雅</td>
+                <td class="First">菜脯餅</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">蘋果西打</td>
+            </tr>
+            <tr>
+                <td class="Once">bule8</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">可樂果</td>
+                <td class="First">浪味仙</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">Carlossan</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">北海鱈魚香絲</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">chaeyu</td>
+                <td class="First">花蓮奶油酥條</td>
+                <td class="First">北海道鮮奶草莓麥片</td>
+                <td class="First">菓風小舖的糖果</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">蕃薯片</td>
+            </tr>
+            <tr>
+                <td class="Once">CherryVoe</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">乖乖</td>
+                <td class="First">方塊酥</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">chingye</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">芒果乾</td>
+                <td class="First">沙其瑪</td>
+                <td class="First">科學麵</td>
+                <td class="First">淡水魚酥</td>
+            </tr>
+            <tr>
+                <td class="Once">chisw</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">新貴派</td>
+                <td class="First">可樂果</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">cho20132</td>
+                <td class="First">新貴派</td>
+                <td class="First">旺旺小饅頭</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">沙琪瑪</td>
+                <td class="First">蛋捲</td>
+            </tr>
+            <tr>
+                <td class="Once">cyching6713</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">卡滋爆米花</td>
+                <td class="First">蛋捲</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">d00687</td>
+                <td class="First">滿天星</td>
+                <td class="First">張君雅</td>
+                <td class="First">浪味仙</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">dfg99</td>
+                <td class="First">滿天星</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">奇多起司棒</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">dn06pooh</td>
+                <td class="First">可樂果</td>
+                <td class="First">鹹蔬餅</td>
+                <td class="First">麥香雞塊</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">dodomomo222</td>
+                <td class="First">可樂果</td>
+                <td class="First">牛奶花生</td>
+                <td class="First">寶咖咖</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">貢糖</td>
+            </tr>
+            <tr>
+                <td class="Once">Eddward</td>
+                <td class="First">可樂果</td>
+                <td class="First">蝦味先</td>
+                <td class="First">燒番麥</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">ellinbe</td>
+                <td class="First">可樂果</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">科學麵</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">ellyk28</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">蛋捲</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">evaaafang</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">浪味仙</td>
+                <td class="First">真魷味</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">GELGOOG</td>
+                <td class="First">蛋酥</td>
+                <td class="First">蛋捲</td>
+                <td class="First">方塊酥</td>
+                <td class="First">太國捲</td>
+                <td class="First">可口奶滋</td>
+            </tr>
+            <tr>
+                <td class="Once">geminiTHC</td>
+                <td class="First">卡哩卡哩</td>
+                <td class="First">乖乖</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">張君雅</td>
+                <td class="First">可樂果</td>
+            </tr>
+            <tr>
+                <td class="Once">gjek</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">北海鱈魚香絲</td>
+                <td class="First">可樂果</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">holan40</td>
+                <td class="First">可樂果</td>
+                <td class="First">牛軋糖</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">牛舌餅</td>
+                <td class="First">奶油酥餅</td>
+            </tr>
+            <tr>
+                <td class="Once">hsin0114</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">巧克球QQ</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">i50523</td>
+                <td class="First">可樂果</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">蛋捲</td>
+                <td class="First">科學麵</td>
+            </tr>
+            <tr>
+                <td class="Once">imay</td>
+                <td class="First">牛軋糖</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">貢糖</td>
+                <td class="First">蛋捲</td>
+                <td class="First">花生糖</td>
+            </tr>
+            <tr>
+                <td class="Once">ingxeng</td>
+                <td class="First">可樂果</td>
+                <td class="First">蝦味先</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">Irene309</td>
+                <td class="First">牛軋糖</td>
+                <td class="First">太陽餅</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">奶油酥條</td>
+                <td class="First">淡水魚酥</td>
+            </tr>
+            <tr>
+                <td class="Once">JHL790216</td>
+                <td class="First">跳跳糖</td>
+                <td class="First">蛋捲</td>
+                <td class="First">彈珠汽水</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">jk093002</td>
+                <td class="First">可樂果</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">科學麵</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">滿天心洋芋脆片</td>
+            </tr>
+            <tr>
+                <td class="Once">judy0498</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">新貴派</td>
+                <td class="First">八寶粥</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">JYPETWICE</td>
+                <td class="First">牛舌餅</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">芒果乾</td>
+                <td class="First">奶油酥餅</td>
+                <td class="First">蝦味先</td>
+            </tr>
+            <tr>
+                <td class="Once">kevin890218</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">孔雀捲心酥</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">kiwilkiwil</td>
+                <td class="First">鹹蔬餅</td>
+                <td class="First">科學麵</td>
+                <td class="First">乖乖</td>
+                <td class="First">可樂果</td>
+                <td class="First">蝦味先</td>
+            </tr>
+            <tr>
+                <td class="Once">kuramylove</td>
+                <td class="First">浪味仙</td>
+                <td class="First">海底雞</td>
+                <td class="First">足球巧克力</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">liaoeddie</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">巧克力酥片</td>
+                <td class="First">新貴派</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">Lorran</td>
+                <td class="First">可樂果</td>
+                <td class="First">科學麵</td>
+                <td class="First">脆笛酥</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">寶咖咖</td>
+            </tr>
+            <tr>
+                <td class="Once">loverafa0603</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">巧克球QQ</td>
+                <td class="First">可樂果</td>
+                <td class="First">新貴派</td>
+                <td class="First">77乳加</td>
+            </tr>
+            <tr>
+                <td class="Once">luka921222</td>
+                <td class="First">蕃薯片</td>
+                <td class="First">未炸蝦餅</td>
+                <td class="First">芒果乾</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">m912101</td>
+                <td class="First">沙琪瑪</td>
+                <td class="First">科學麵</td>
+                <td class="First">黑松沙士</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">m9o2o</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">水果乾</td>
+                <td class="First">牛軋糖</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">Matchayu</td>
+                <td class="First">麻花捲</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">浪味仙</td>
+                <td class="First">可樂果</td>
+            </tr>
+            <tr>
+                <td class="Once">maureen131</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">真魷味</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">mayalovehp</td>
+                <td class="First">巧克力酥片</td>
+                <td class="First">喜年來紅麴薄餅</td>
+                <td class="First">蘇打餅乾</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">mijalar</td>
+                <td class="First">巧克球QQ</td>
+                <td class="First"></td>
+                <td class="First"></td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">mintmina</td>
+                <td class="First">巧克球QQ</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">芒果乾</td>
+                <td class="First">方塊酥</td>
+                <td class="First">新貴派</td>
+            </tr>
+            <tr>
+                <td class="Once">MONSANTO</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">金牛角</td>
+                <td class="First">可樂糖</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">moo361</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">維力炸醬麵</td>
+                <td class="First"></td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">nancyyi</td>
+                <td class="First">蛋捲</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">真魷味</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">o407515</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First"></td>
+                <td class="First">真魷味</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">old5566</td>
+                <td class="First">卡哩卡哩</td>
+                <td class="First">牛舌餅</td>
+                <td class="First">蜜餞</td>
+                <td class="First">蛋捲</td>
+                <td class="First">方塊酥</td>
+            </tr>
+            <tr>
+                <td class="Once">omelet</td>
+                <td class="First">可樂果</td>
+                <td class="First">沙琪瑪</td>
+                <td class="First"></td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">ookiniSN9</td>
+                <td class="First">蝦味先</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">可樂果</td>
+                <td class="First">蛋捲</td>
+                <td class="First">巧克球QQ</td>
+            </tr>
+            <tr>
+                <td class="Once">oooptt</td>
+                <td class="First">新貴派</td>
+                <td class="First">蛋捲</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">牛舌餅</td>
+                <td class="First">芒果乾</td>
+            </tr>
+            <tr>
+                <td class="Once">orangeonly</td>
+                <td class="First">沙琪瑪</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">新貴派</td>
+                <td class="First">芒果乾</td>
+                <td class="First">蛋捲</td>
+            </tr>
+            <tr>
+                <td class="Once">Oranonce</td>
+                <td class="First">小魚乾花生</td>
+                <td class="First">可樂果</td>
+                <td class="First">科學麵</td>
+                <td class="First">77乳加</td>
+                <td class="First">蚵仔煎洋芋片</td>
+            </tr>
+            <tr>
+                <td class="Once">panliu</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">新貴派</td>
+                <td class="First">北海鱈魚香絲</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">peom3310</td>
+                <td class="First">真魷味</td>
+                <td class="First">可樂果</td>
+                <td class="First">滿天星</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">PinkBnN</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">新貴派</td>
+                <td class="First">麻花捲</td>
+                <td class="First">蕃薯片</td>
+                <td class="First">牛舌餅</td>
+            </tr>
+            <tr>
+                <td class="Once">qazxswptt</td>
+                <td class="First">巧克力酥片</td>
+                <td class="First">蝦味先</td>
+                <td class="First">蘇打餅乾</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">rairew</td>
+                <td class="First">蜜蘭諾</td>
+                <td class="First">蕃薯片</td>
+                <td class="First">脆迪酥</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">re</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">科學麵</td>
+                <td class="First">可樂果</td>
+                <td class="First">牛軋糖</td>
+                <td class="First">八寶粥</td>
+            </tr>
+            <tr>
+                <td class="Once">ron6316</td>
+                <td class="First">蝦味先</td>
+                <td class="First">蛋捲</td>
+                <td class="First">鐵蛋</td>
+                <td class="First">花生牛奶</td>
+                <td class="First">寶咖咖</td>
+            </tr>
+            <tr>
+                <td class="Once">roshe8780</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">芒果乾</td>
+                <td class="First">鹹蔬餅</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">77乳加</td>
+            </tr>
+            <tr>
+                <td class="Once">RoverFrank</td>
+                <td class="First">芒果乾</td>
+                <td class="First">沙琪瑪</td>
+                <td class="First">可樂果</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">ru4isu3xu3</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">巧克力酥片</td>
+                <td class="First">新貴派</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">s6625696</td>
+                <td class="First">科學麵</td>
+                <td class="First">可樂果</td>
+                <td class="First">維力炸醬麵</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">SanaTsuyu</td>
+                <td class="First">芒果乾</td>
+                <td class="First">奶油酥餅</td>
+                <td class="First">77乳加</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">新貴派</td>
+            </tr>
+            <tr>
+                <td class="Once">scky060914</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">巧克力酥片</td>
+                <td class="First">新貴派</td>
+                <td class="First">蛋捲</td>
+                <td class="First">可樂果</td>
+            </tr>
+            <tr>
+                <td class="Once">shock1021</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">蝦味先</td>
+                <td class="First">雞塊餅乾</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">sky80610</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">蛋捲</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">snio2427</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">牛軋糖</td>
+                <td class="First">方塊酥</td>
+                <td class="First">蛋捲</td>
+                <td class="First">麵茶粉</td>
+            </tr>
+            <tr>
+                <td class="Once">songmeng</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">真魷味</td>
+                <td class="First">科學麵</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">spinwu</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">沙其瑪</td>
+                <td class="First">核棗糕</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">taki121</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">新貴派</td>
+                <td class="First">可樂果</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">TExpress</td>
+                <td class="First">芒果乾</td>
+                <td class="First">維力炸醬麵</td>
+                <td class="First">蛋捲</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">tieneun</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">新貴派</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">TNEOOO</td>
+                <td class="First">巧克力酥片</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">蛋捲</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">tom5855</td>
+                <td class="First">維力炸醬麵</td>
+                <td class="First">巧克球QQ</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">ToroShock</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First"></td>
+                <td class="First"></td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">ttisme</td>
+                <td class="First">科學麵</td>
+                <td class="First">77乳加</td>
+                <td class="First">垂坤巧克力甜甜圈</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">TwiceBear</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">孔雀捲心酥</td>
+                <td class="First">浪味仙</td>
+                <td class="First">可口奶滋</td>
+                <td class="First">方塊酥</td>
+            </tr>
+            <tr>
+                <td class="Once">TWICEoMOMOo</td>
+                <td class="First">芒果乾</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">浪味仙</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">麵茶粉</td>
+            </tr>
+            <tr>
+                <td class="Once">tyhp007</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">牛奶花生</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">tzwex0198</td>
+                <td class="First">蛋捲</td>
+                <td class="First">新貴派</td>
+                <td class="First">旺旺小饅頭</td>
+                <td class="First">科學麵</td>
+                <td class="First">沙琪瑪</td>
+            </tr>
+            <tr>
+                <td class="Once">vincentbo</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First"></td>
+                <td class="First"></td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">wei613031</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">維力炸醬麵</td>
+                <td class="First">沙其瑪</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">whitecat430</td>
+                <td class="First">奇多起司棒</td>
+                <td class="First">牛奶花生</td>
+                <td class="First">可樂果</td>
+                <td class="First">蚵仔煎洋芋片</td>
+                <td class="First">義美小泡芙</td>
+            </tr>
+            <tr>
+                <td class="Once">wisheidolon</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">巧克力酥片</td>
+                <td class="First">新貴派</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">wumayzi</td>
+                <td class="First">巧克力酥片</td>
+                <td class="First">滿天星</td>
+                <td class="First">孔雀餅乾</td>
+                <td class="First">蝦味先</td>
+                <td class="First">蕃薯片</td>
+            </tr>
+            <tr>
+                <td class="Once">yoshi9145</td>
+                <td class="First">義美香芋白巧克力捲</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">奶油酥條</td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">YOYONICK</td>
+                <td class="First">義美小泡芙</td>
+                <td class="First">新貴派</td>
+                <td class="First">蛋捲</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">YunMengTien</td>
+                <td class="First">蛋捲</td>
+                <td class="First">牛軋糖</td>
+                <td class="First">芒果乾</td>
+                <td class="First">可樂果</td>
+                <td class="First">沙琪瑪</td>
+            </tr>
+            <tr>
+                <td class="Once">Zhug9308</td>
+                <td class="First">ㄋㄟㄋㄟ補給站</td>
+                <td class="First">滿天星</td>
+                <td class="First">新貴派</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+            <tr>
+                <td class="Once">zold</td>
+                <td class="First">鳳梨酥</td>
+                <td class="First">巧克力酥片</td>
+                <td class="First">新貴派</td>
+                <td class="First"></td>
+                <td class="First"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="SnacksChar1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div id="SnacksChar2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <div id="SnacksChar3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <script>
+        $(function () {
+            var dictionary = [];
+            var array = [];
+            var chatData1 = [];
+            var chatData2 = [];
+            var chatData3 = [];
+            var i = 0;
+            $('#Table tbody').each(function () {
+                $(this).find('.First').each(function () {
+                    var Snacks = $(this).html()
+                    var Once = $(this).parent().find(".Once").html();
+                    if (Snacks in dictionary)
+                        dictionary[Snacks] = dictionary[Snacks] + 1;
+                    else
+                        dictionary[Snacks] = 1;
+                });
+            });
+
+            for (name in dictionary) {
+                var value = dictionary[name];
+                var item = [];
+                if (name != "") {
+                    i++;
+                    if (i <= 25) {
+                        item.push(name, value);
+                        chatData1.push(item);
+                    }
+                    else if (i <= 50) {
+                        item.push(name, value);
+                        chatData2.push(item);
+                    }
+                    else {
+                        item.push(name, value);
+                        chatData3.push(item);
+                    }
+                }
+            }
+
+            $('#SnacksChar1').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '2016 Momo 零食推薦 統計表 1'
+                },
+                subtitle: {
+                    text: ''
+                },
+                xAxis: {
+                    type: 'category'
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: '投票數'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                series: [{
+                    name: '票數',
+                    data: chatData1
+                }]
+            });
+            $('#SnacksChar2').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '2016 Momo 零食推薦 統計表 2'
+                },
+                subtitle: {
+                    text: ''
+                },
+                xAxis: {
+                    type: 'category'
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: '投票數'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                series: [{
+                    name: '票數',
+                    data: chatData2
+                }]
+            });
+            $('#SnacksChar3').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '2016 Momo 零食推薦 統計表 3'
+                },
+                subtitle: {
+                    text: ''
+                },
+                xAxis: {
+                    type: 'category'
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: '投票數'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                series: [{
+                    name: '票數',
+                    data: chatData3
+                }]
+            });
+        });
+    </script>
+</body>
+</html>
